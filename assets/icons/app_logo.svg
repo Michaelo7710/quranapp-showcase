@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22" />
+      <stop offset="50%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#021c16" />
+    </linearGradient>
+    
+    <!-- Gold Foil Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="30%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Inner Radial Glow -->
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Drop Shadow -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="512" height="512" rx="112" fill="url(#glowGrad)" />
+
+  <!-- Outer Sacred Geometry Border -->
+  <rect x="32" y="32" width="448" height="448" rx="88" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-opacity="0.4" />
+  
+  <!-- Islamic Star: Rub el Hizb (Two interlocking squares at 45 degrees) -->
+  <g transform="translate(256, 256)" filter="url(#dropShadow)">
+    <!-- Square 1 (0 deg) -->
+    <rect x="-140" y="-140" width="280" height="280" rx="20" fill="#042f2e" stroke="url(#goldGrad)" stroke-width="4.5" />
+    <!-- Square 2 (45 deg) -->
+    <rect x="-140" y="-140" width="280" height="280" rx="20" transform="rotate(45)" fill="#042f2e" stroke="url(#goldGrad)" stroke-width="4.5" />
+    
+    <!-- Inner Concentric Circle -->
+    <circle r="128" fill="#022c22" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="4 6" opacity="0.8" />
+    <circle r="118" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5" />
+
+    <!-- Open Holy Quran Book Silhouette -->
+    <g transform="translate(0, 10)">
+      <!-- Left Page -->
+      <path d="M -10 -40 C -45 -50, -85 -45, -95 -20 L -95 55 C -85 30, -45 25, -10 35 Z" 
+            fill="#fef9c3" stroke="url(#goldGrad)" stroke-width="2.5" />
+      <!-- Left Page Verses Texture Lines -->
+      <line x1="-80" y1="-12" x2="-25" y2="-4" stroke="#047857" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="-80" y1="4" x2="-25" y2="12" stroke="#047857" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="-80" y1="20" x2="-35" y2="27" stroke="#047857" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+
+      <!-- Right Page -->
+      <path d="M 10 -40 C 45 -50, 85 -45, 95 -20 L 95 55 C 85 30, 45 25, 10 35 Z" 
+            fill="#fef9c3" stroke="url(#goldGrad)" stroke-width="2.5" />
+      <!-- Right Page Verses Texture Lines -->
+      <line x1="25" y1="-4" x2="80" y2="-12" stroke="#047857" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="25" y1="12" x2="80" y2="4" stroke="#047857" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+      <line x1="35" y1="27" x2="80" y2="20" stroke="#047857" stroke-width="2.5" stroke-linecap="round" opacity="0.6" />
+
+      <!-- Quran Center Spine & Stand (Rehal) -->
+      <path d="M -12 36 L 0 46 L 12 36 L 0 -42 Z" fill="url(#goldGrad)" />
+      <path d="M -35 55 L -60 85 L -45 88 L -15 60 Z" fill="url(#goldGrad)" />
+      <path d="M 35 55 L 60 85 L 45 88 L 15 60 Z" fill="url(#goldGrad)" />
+      
+      <!-- Golden Crescent Apex Symbol Above Quran -->
+      <path d="M -2 -72 A 18 18 0 1 1 -2 -42 A 13 13 0 1 0 -2 -72 Z" fill="url(#goldGrad)" />
+      <!-- Small Apex Star -->
+      <polygon points="5,-58 7,-53 12,-53 8,-49 10,-44 5,-47 1,-44 3,-49 -1,-53 4,-53" fill="url(#goldGrad)" />
+    </g>
+  </g>
+</svg>

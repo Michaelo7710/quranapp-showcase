@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Bookmark ribbon with Islamic star accent -->
+  <path d="M12 8C12 5.8 13.8 4 16 4H32C34.2 4 36 5.8 36 8V44L24 35L12 44V8Z" 
+        stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+  <!-- Small Star at Center -->
+  <polygon points="24,14 26,19 31,19 27,22 29,27 24,24 19,27 21,22 17,19 22,19" fill="#D97706" />
+</svg>
