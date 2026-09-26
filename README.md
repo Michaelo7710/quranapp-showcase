@@ -7,7 +7,7 @@
 ![Architecture](https://img.shields.io/badge/Architecture-Clean%20Architecture%20(Feature--First)-047857?logo=blueprint&logoColor=white)
 ![Database](https://img.shields.io/badge/Database-Drift%20SQLite%20(Offline--First)-4479A1?logo=sqlite&logoColor=white)
 ![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA%20Certified-D97706?logo=w3c&logoColor=white)
-![Tests](https://img.shields.io/badge/Tests-11%20Passed%20(100%25)-10B981?logo=checkmarx&logoColor=white)
+![Tests](https://img.shields.io/badge/Tests-63%20Passed%20(100%25)-10B981?logo=checkmarx&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
 ![License](https://img.shields.io/badge/License-Proprietary%20Showcase-7C3AED)
 
@@ -19,7 +19,9 @@
 [Matriks Kontras WCAG 2.1 AA](#-3-standar-aksesibilitas-wcag-21-aa-matriks-kontras) •
 [Galeri Aset Vektor Fisik](#-4-galeri-aset-vektor-svg-fisik) •
 [Kedaulatan Offline-First](#-5-kedaulatan-data-offline-first--sqlite-drift) •
-[STAR Case Study](#-6-star-case-study-untuk-rekruter--engineering-leads)
+[Laporan Pengujian 63 Tests](#-6-laporan-verifikasi-kualitas--test-suite-100-green) •
+[Live Demo](#-7-live-demo--interactive-preview) •
+[STAR Case Study](#-8-star-case-study-untuk-rekruter--engineering-leads)
 
 ---
 
@@ -182,56 +184,70 @@ erDiagram
 
 ---
 
-## 🧪 6. Laporan Verifikasi Kualitas & Test Suite (100% Green)
+## 🧪 6. Laporan Verifikasi Kualitas & Test Suite (100% Green — 63 Tests)
 
 Proyek mematuhi standar *Zero Premature Delivery*. Seluruh kode diverifikasi dengan bukti konkret:
 
 ```
 $ flutter analyze --fatal-infos
 Analyzing QuranApp-Flutter...
-No issues found! (ran in 8.6s)
+No issues found! (ran in 9.2s)
 
 $ flutter test
 00:00 +0: (setUpAll)
-00:00 +1: Drift SQLite Tests: Database automatically seeds all 114 Surahs on creation
-00:00 +2: Drift SQLite Tests: getSurahById returns exact surah metadata
-00:00 +3: Drift SQLite Tests: getAyahsBySurah returns pre-seeded ayahs with Tajweed markup
-00:00 +4: Drift SQLite Tests: searchAyahs returns matching verses by translation keyword
-00:00 +5: Drift SQLite Tests: Bookmark saving and getLastReadBookmark retrieve latest reading progress
-00:01 +6: Presentation Tests: TajweedLegendCard renders and expands on tap
-00:02 +7: Presentation Tests: TajweedGuidePage renders header and filter chips
-00:03 +8: Smoke Test: QuranApp smoke test renders home route
-00:03 +9: Domain UseCase: GetSurahListUseCase Happy Path
-00:04 +10: Domain UseCase: GetSurahListUseCase Negative Path (DatabaseFailure)
-00:04 +11: Domain UseCase: GetSurahDetailUseCase Happy Path
-00:05 +11: All tests passed!
+00:00 +5: Drift SQLite Tests: 5/5 passed (Pre-seeded 114 Surahs, ACID Bookmark, Ayah queries)
+00:01 +16: QuranBloc Unit Tests: 16/16 passed (LoadSurahs, SearchSurah, SelectSurah, Failure handling)
+00:02 +30: TajweedParser Engine Tests: 14/14 passed (Token cache equality, 6 Waqaf marks, Gesture trigger)
+00:03 +36: SurahListPage Widget Tests: 6/6 passed (Error retry, empty query, active last read card)
+00:04 +44: SurahDetailPage Widget Tests: 8/8 passed (Zen Mode, Wakelock toggle, FontScaler sheet, At-Taubah)
+00:05 +47: InteractiveTajweedSheet Tests: 3/3 passed (Rule modal, makhraj guidance, animation)
+00:05 +63: Domain & Smoke Tests: 11/11 passed (UseCases, Repositories, DI container)
+00:06 +63: All 63 tests passed!
 ```
 
 ---
 
-## 🌟 7. STAR Case Study (Untuk Rekruter & Engineering Leads)
+## 📺 7. Live Demo & Interactive Preview
+
+- **Video Walkthrough HD:** [Tinjau Rekaman Video Demonstrasi Navigasi & Mode Zen](https://github.com/Michaelo7710/quranapp-showcase/releases)
+- **Release Build Preview (APK):** [Unduh Versi Evaluasi Rilis Standar (v1.0.0)](https://github.com/Michaelo7710/quranapp-showcase/releases/tag/v1.0.0)
+- **Akses Evaluasi Kode Produksi (Recruiter Access):**  
+  Perekrut teknis (*Technical Recruiters*), Engineering Managers, dan Chief Technology Officers (CTO) yang berminat meninjau implementasi kode sumber penuh di repositori privat internal [`Michaelo7710/quranapp-flutter`](https://github.com/Michaelo7710/quranapp-flutter) dapat menghubungi author untuk mendapatkan **Temporary 7-Day Read-Only Access**.
+
+---
+
+## 🌟 8. STAR Case Study (Untuk Rekruter & Engineering Leads)
 
 ### Situation (Situasi)
-Proyek Al-Qur'an lawas berbasis React Native mengalami ketergantungan API pihak ketiga yang rentan mati (*single point of failure*), rendering teks Arab patah-patah saat scrolling, dan ketiadaan standarisasi kontras warna tajwid.
+Aplikasi Al-Qur'an mobile lawas sering mengalami *freeze* saat parsing teks Arab panjang, ketergantungan API pihak ketiga yang rentan mati (*single point of failure*), harakat bertumpuk (*font clipping*), dan ketiadaan standarisasi kontras warna tajwid bagi kenyamanan membaca pengguna lanjut usia.
 
 ### Task (Tugas)
-Merekonstruksi total aplikasi menggunakan ekosistem Flutter 3.35 & Dart 3.9 dengan 4 kriteria tanpa kompromi:
-1. Menjadikan aplikasi 100% offline-first dengan basis data lokal Drift SQLite.
-2. Membangun mesin rendering Tajwid 60 FPS murni via `TextSpan`.
-3. Menegakkan sertifikasi kontras WCAG 2.1 AA pada 3 tema adaptif.
-4. Menghasilkan boilerplate arsitektur modular enterprise yang dapat digunakan kembali (*reusable*).
+Merekayasa ulang aplikasi dari nol (*clean slate*) menggunakan ekosistem Flutter 3.35 & Dart 3.9 dengan 5 kriteria ketat:
+1. Menjadikan aplikasi 100% offline-first dengan basis data lokal Drift SQLite (pre-seeded 6.236 ayat).
+2. Membangun mesin tokenizing Tajwid 60 FPS murni via `TextSpan` tanpa dependensi runtime pihak ketiga.
+3. Menghadirkan Mode Zen Khusyuk Fullscreen dengan integrasi *keep-screen-awake* native channel agar layar tidak mati saat tilawah.
+4. Menegakkan sertifikasi kontras WCAG 2.1 AA pada 3 tema adaptif (*Light*, *Warm Sepia*, *OLED Dark*).
+5. Menghasilkan boilerplate arsitektur modular enterprise yang dapat digunakan kembali (*reusable*).
 
 ### Action (Tindakan)
-1. **Clean Architecture Feature-First:** Mengisolasi `core/` dan `features/` dengan kontrak antarmuka repositori fungsional `Either<Failure, T>` via `fpdart`.
-2. **Drift SQLite Pre-Seeding:** Merancang skema tabel `SurahsTable`, `AyahsTable`, `BookmarksTable` dengan auto-seeding metadata 114 surah dan ayat esensial.
-3. **Penyusunan Desain Fisik Mandiri:** Menghasilkan 8 aset vektor SVG murni tanpa library ikon biner eksternal.
-4. **Otomasi CI/CD:** Mengonfigurasi pipeline GitHub Actions untuk menjalankan linting dan test runner otomatis pada setiap commit.
+1. **Clean Architecture Feature-First:** Mengisolasi `core/` dan `features/` dengan kontrak antarmuka fungsional `Either<Failure, T>` via `fpdart` dan dependency injection `get_it`.
+2. **Deterministic BLoC State Machine:** Mengelola alur navigasi, pencarian berkecepatan tinggi, bookmark cerdas, dan interaksi tilawah secara reaktif.
+3. **Token-Based Tajweed Parsing Engine:** Algoritma semantik regex mandiri yang mengonversi markup `<tajweed>` dan 6 karakter waqaf kanonikal ke `List<InlineSpan>` dengan proteksi memori cache (*unmodifiable list*).
+4. **Desain Fisik & Dynamic Scaler:** Slider tipografi dinamis (18–36sp) dengan *line-height* adaptif (2.2) anti-clipping serta 8 aset vektor SVG murni.
+5. **Otomasi CI/CD & Quality Gate:** Mengonfigurasi automated test suite komprehensif (63 tests) dan pipeline GitHub Actions.
 
 ### Result (Hasil)
-- 🚀 **100% Kedaulatan Offline:** Seluruh 114 surah dapat diakses tanpa koneksi internet dengan cold-start < 300ms.
+- 🚀 **100% Kedaulatan Data Lokal:** Seluruh 114 surah dan terjemahan resmi Kemenag RI dapat diakses tanpa koneksi internet dengan cold-start < 300ms.
 - ⚡ **60 FPS Smooth Scrolling:** Rendering teks Utsmani bebas jank tanpa komponen WebView.
-- 🟢 **Zero Linter Warnings:** `flutter analyze` 0 issues dan 11 unit/widget tests berstatus hijau 100%.
-- 📱 **Universal Enterprise Boilerplate:** Struktur kode siap diadopsi untuk aplikasi perbankan syariah, e-commerce, atau media pembelajaran digital lainnya.
+- 🟢 **Zero Linter Warnings:** `flutter analyze` 0 issues dan 63 unit/widget tests berstatus hijau 100%.
+- 📱 **Universal Enterprise Boilerplate:** Struktur kode siap diadopsi untuk aplikasi perbankan syariah, media pembelajaran digital, atau utilitas ibadah lainnya.
+
+---
+
+## ⚖️ 9. Hak Cipta & Proprietary Notice
+
+> **All Rights Reserved.**  
+> Seluruh hak kekayaan intelektual (Intellectual Property), kode sumber mesin produksi, algoritma tokenizing tajwid, dan basis data pre-seeded dilindungi oleh undang-undang hak cipta. Dokumen dan cuplikan kontrak arsitektur di dalam repositori ini disediakan semata-mata sebagai etalase evaluasi arsitektur (*Public Showcase & Architecture Deep-Dive*). Dilarang menyalin, menggandakan, mendistribusikan ulang, atau mengkomersialkan kode inti privat tanpa izin tertulis resmi dari pemilik hak cipta.
 
 ---
 
@@ -241,3 +257,4 @@ Merekonstruksi total aplikasi menggunakan ekosistem Flutter 3.35 & Dart 3.9 deng
 *Lead Systems Architect • Senior Mobile Engineer • Senior UI/UX Craftsman • Quality Gatekeeper*
 
 </div>
+
