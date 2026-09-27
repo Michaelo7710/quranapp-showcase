@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Horizon Line -->
+  <path d="M4 34H44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Rising Sun Disc -->
+  <path d="M14 34C14 28.477 18.477 24 24 24C29.523 24 34 28.477 34 34" 
+        stroke="#D97706" stroke-width="3" stroke-linecap="round" fill="#F59E0B" fill-opacity="0.2" />
+        
+  <!-- Morning Sunrays -->
+  <path d="M24 12V18" stroke="#D97706" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M14 16L18 20" stroke="#D97706" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M34 16L30 20" stroke="#D97706" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M7 25L12 27" stroke="#D97706" stroke-width="2" stroke-linecap="round" />
+  <path d="M41 25L36 27" stroke="#D97706" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Dawn Horizon Water Reflections -->
+  <path d="M10 39H38" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+  <path d="M16 43H32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.4" />
+</svg>

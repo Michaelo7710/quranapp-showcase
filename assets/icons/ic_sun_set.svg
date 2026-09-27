@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Horizon Line -->
+  <path d="M4 32H44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Setting Sun Disc dipping under horizon -->
+  <path d="M15 32C15 27.029 19.029 23 24 23C28.971 23 33 27.029 33 32" 
+        stroke="#EA580C" stroke-width="3" stroke-linecap="round" fill="#F97316" fill-opacity="0.25" />
+        
+  <!-- Twilight Descending Rays -->
+  <path d="M24 8V16" stroke="#EA580C" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M12 14L17 19" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M36 14L31 19" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" />
+  <path d="M6 23L11 25" stroke="#EA580C" stroke-width="2" stroke-linecap="round" />
+  <path d="M42 23L37 25" stroke="#EA580C" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Evening Twilight Waves -->
+  <path d="M8 37H40" stroke="#EA580C" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+  <path d="M12 41H36" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.5" />
+  <path d="M18 45H30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.3" />
+</svg>

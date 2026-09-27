@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Left Hand Cupped in Supplication -->
+  <path d="M22 13V25C22 28.5 19.5 31.5 16 32.5L10 34.5C8 35.2 6 33.7 6 31.5V26L11 15C11.5 13.8 12.8 13 14 13C15.2 13 16.3 13.8 16.8 15L17.5 16.5C18 15.5 19 14.8 20.2 14.8C21.2 14.8 22 15.6 22 16.6V13Z" 
+        stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" fill="currentColor" fill-opacity="0.1" />
+
+  <!-- Right Hand Cupped in Supplication -->
+  <path d="M26 13V25C26 28.5 28.5 31.5 32 32.5L38 34.5C40 35.2 42 33.7 42 31.5V26L37 15C36.5 13.8 35.2 13 34 13C32.8 13 31.7 13.8 31.2 15L30.5 16.5C30 15.5 29 14.8 27.8 14.8C26.8 14.8 26 15.6 26 16.6V13Z" 
+        stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" fill="currentColor" fill-opacity="0.1" />
+        
+  <!-- Wrists / Base Support -->
+  <path d="M7 33L12 43H18L21 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M41 33L36 43H30L27 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Light Divine Glow Above Palms -->
+  <path d="M24 6L25 9L28 10L25 11L24 14L23 11L20 10L23 9L24 6Z" fill="#D97706" />
+</svg>

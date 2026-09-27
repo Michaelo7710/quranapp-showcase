@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Crescent Moon -->
+  <path d="M28 6C16.954 6 8 14.954 8 26C8 37.046 16.954 46 28 46C33.152 46 37.86 44.053 41.408 40.865C30.5 39.5 22 30.5 22 19.5C22 13.8 24.5 8.7 28.5 5.2C28.334 5.2 28.167 5.2 28 6Z" 
+        stroke="#6366F1" stroke-width="2.5" stroke-linejoin="round" fill="#818CF8" fill-opacity="0.2" />
+        
+  <!-- Glowing Stars -->
+  <!-- Main Star -->
+  <path d="M36 10L37.2 13.8L41 15L37.2 16.2L36 20L34.8 16.2L31 15L34.8 13.8L36 10Z" 
+        fill="#F59E0B" stroke="#D97706" stroke-width="1.2" stroke-linejoin="round" />
+        
+  <!-- Secondary Star -->
+  <path d="M38 27L38.8 29.2L41 29.8L38.8 30.4L38 32.6L37.2 30.4L35 29.8L37.2 29.2L38 27Z" 
+        fill="#F59E0B" stroke="#D97706" stroke-width="1" stroke-linejoin="round" />
+        
+  <!-- Sparkle Small -->
+  <circle cx="28" cy="28" r="1.5" fill="#FBBF24" />
+</svg>
