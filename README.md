@@ -1,4 +1,4 @@
-# 📖 QuranApp Digital — Enterprise Flutter Architecture Showcase & System Deep-Dive
+# 📖 QuranApp Digital — Flutter Clean Architecture Showcase & Case Study
 
 <div align="center">
 
@@ -6,14 +6,14 @@
 ![Dart](https://img.shields.io/badge/Dart-3.9.2-0175C2?logo=dart&logoColor=white)
 ![Architecture](https://img.shields.io/badge/Architecture-Clean%20Architecture%20(Feature--First)-047857?logo=blueprint&logoColor=white)
 ![Database](https://img.shields.io/badge/Database-Drift%20SQLite%20v3%20(Offline--First)-4479A1?logo=sqlite&logoColor=white)
-![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA%20Certified-D97706?logo=w3c&logoColor=white)
-![Tests](https://img.shields.io/badge/Tests-320%20Passed%20(100%25)-10B981?logo=checkmarx&logoColor=white)
+![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.1%20AA%20Compliant-D97706?logo=w3c&logoColor=white)
+![Tests](https://img.shields.io/badge/Tests-414%20Passed%20(100%25)-10B981?logo=checkmarx&logoColor=white)
 ![Sensors](https://img.shields.io/badge/Sensors-Qibla%20Fusion%20%26%20Haptic%20Tasbih-6366F1)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
-![License](https://img.shields.io/badge/License-Proprietary%20Showcase-7C3AED)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-**Sovereign Offline-First Holy Quran Mobile Application & Universal Enterprise Flutter Boilerplate**  
-*Merekonsiliasi Kesucian Tradisi Rasm Utsmani dengan Ketangguhan Rekayasa Sistem Seluler Modern.*
+**Aplikasi Al-Qur'an Digital Offline-First & Portofolio Arsitektur Flutter Bersih**  
+*Menerapkan Clean Architecture (BLoC), SQLite Lokal, dan Pewarnaan Tajwid Berbasis TextSpan.*
 
 [Arsitektur Sistem](#-1-arsitektur-sistem--clean-architecture) •
 [Mesin Tajwid 60 FPS](#-2-mesin-tajwid-teks-utsmani-60-fps) •
@@ -21,7 +21,7 @@
 [Sensor Fusion & Hisnul Muslim](#-4-sensor-fusion-kompas-kiblat--haptic-dhikr-engine) •
 [Galeri Aset Vektor Fisik](#-5-galeri-aset-vektor-svg-fisik) •
 [Kedaulatan Offline-First (Schema v3)](#-6-kedaulatan-data-offline-first--sqlite-drift-v3) •
-[Laporan Pengujian 320 Tests](#-7-laporan-verifikasi-kualitas--test-suite-100-green---320-tests) •
+[Laporan Pengujian 414 Tests](#-7-laporan-verifikasi-kualitas--test-suite-100-green---414-tests) •
 [Live Demo & APK](#-8-live-demo--interactive-preview) •
 [STAR Case Study](#-9-star-case-study-untuk-rekruter--engineering-leads)
 
@@ -29,8 +29,8 @@
 
 </div>
 
-> 🔒 **Pemberitahuan Repositori:**  
-> Repositori ini adalah **Etalase Arsitektur Publik (*Public Showcase & Architecture Deep-Dive*)** untuk kebutuhan evaluasi rekruter, arsitek perangkat lunak, dan pimpinan rekayasa teknologi. Basis kode produksi penuh disimpan secara privat di repositori internal: [`Michaelo7710/quranapp-flutter`](https://github.com/Michaelo7710/quranapp-flutter).
+> 💡 **Tentang Repositori Ini:**  
+> Repositori ini adalah **Etalase Portofolio Publik (*Public Showcase & Case Study*)** untuk kebutuhan evaluasi rekruter dan tim rekayasa teknologi. Basis kode produksi penuh disimpan di repositori internal: [`Michaelo7710/quranapp-flutter`](https://github.com/Michaelo7710/quranapp-flutter).
 
 ---
 
@@ -42,7 +42,7 @@ Aplikasi Al-Qur'an pada umumnya di toko aplikasi mobile memiliki kelemahan arsit
 3. **Aksesibilitas Kontras Buruk:** Warna pembeda tajwid sering kali memiliki rasio kontras rendah (< 3:1), menyilaukan mata di malam hari, dan tidak ramah bagi lansia.
 4. **Ekosistem Terfragmentasi:** Pengguna harus menginstal aplikasi terpisah untuk membaca Al-Qur'an, kompas kiblat, jadwal sholat, dan dzikir pagi-petang.
 
-**QuranApp-Flutter** dirancang dari nol (*clean-slate engineering*) untuk memecahkan seluruh masalah tersebut sekaligus menjadi **Boilerplate Universal Standar Enterprise** untuk pengembangan aplikasi Flutter skala besar berikutnya.
+**QuranApp-Flutter** dirancang secara mandiri untuk memecahkan tantangan tersebut sekaligus menjadi sarana pembelajaran dan pembuktian implementasi Clean Architecture serta BLoC pada Flutter.
 
 ---
 
@@ -216,9 +216,9 @@ erDiagram
 
 ---
 
-## 🧪 7. Laporan Verifikasi Kualitas & Test Suite (100% Green — 320 Tests)
+## 🧪 7. Laporan Verifikasi Kualitas & Test Suite (100% Green — 414 Tests)
 
-Proyek mematuhi standar *Zero Premature Delivery*. Seluruh kode diverifikasi dengan bukti konkret:
+Proyek mematuhi standar *Clean Code & Testing*. Seluruh fitur diverifikasi dengan rangkaian tes otomatis:
 
 ```
 $ flutter analyze
@@ -231,33 +231,34 @@ $ flutter test
 00:35 +210: Audio Murottal Streaming, Cache Quota Manager, Sticky Mini Player Tests passed.
 01:00 +274: Hisnul Muslim, Drift SQLite v3 Migrations, Pre-seeded DB Integrity Tests passed.
 01:15 +320: Haptic Dhikr Engine, Tasbih Dial, Dynamic Contextual Home Banner Tests passed.
-01:15 +320: All 320 tests passed!
+01:30 +414: Offline-First Concurrency, Search & Resilience Tests passed.
+01:30 +414: All 414 tests passed!
 ```
 
 ---
 
-## 📺 8. Live Demo & Interactive Preview
+## 📺 8. Live Demo & Repositori
 
 - **Public Architecture Showcase:** [`Michaelo7710/quranapp-showcase`](https://github.com/Michaelo7710/quranapp-showcase)
-- **Universal Release APK (v1.1.0):** [Unduh Versi Produksi Standar (v1.1.0)](https://github.com/Michaelo7710/quranapp-showcase/releases)
-- **Akses Evaluasi Kode Produksi (Recruiter Access):**  
-  Perekrut teknis (*Technical Recruiters*), Engineering Managers, dan Chief Technology Officers (CTO) yang berminat meninjau implementasi kode sumber penuh di repositori privat internal [`Michaelo7710/quranapp-flutter`](https://github.com/Michaelo7710/quranapp-flutter) dapat menghubungi author untuk mendapatkan **Temporary 7-Day Read-Only Access**.
+- **Universal Release APK (v1.1.0):** [Unduh Versi Rilis Standar (v1.1.0)](https://github.com/Michaelo7710/quranapp-showcase/releases)
+- **Akses Peninjauan Kode Sumber:**  
+  Bagi rekan-rekan atau tim rekayasa yang ingin meninjau implementasi kode sumber penuh di repositori privat [`Michaelo7710/quranapp-flutter`](https://github.com/Michaelo7710/quranapp-flutter), silakan hubungi saya untuk kolaborasi atau peninjauan kode.
 
 ---
 
-## 🌟 9. STAR Case Study (Untuk Rekruter & Engineering Leads)
+## 🌟 9. STAR Case Study (Studi Kasus Proyek)
 
 ### Situation (Situasi)
-Aplikasi Al-Qur'an mobile lawas sering mengalami *freeze* saat parsing teks Arab panjang, ketergantungan API pihak ketiga yang rentan mati (*single point of failure*), harakat bertumpuk (*font clipping*), ketiadaan standarisasi kontras warna tajwid bagi lansia, serta terfragmentasinya fitur kiblat, sholat, dan dzikir ke aplikasi berbeda.
+Aplikasi Al-Qur'an mobile lawas sering mengalami *freeze* saat parsing teks Arab panjang, ketergantungan API pihak ketiga yang rentan mati saat tanpa koneksi, harakat bertumpuk (*font clipping*), ketiadaan standarisasi kontras warna tajwid bagi lansia, serta terfragmentasinya fitur pendukung ke aplikasi berbeda.
 
 ### Task (Tugas)
-Merekayasa ulang aplikasi dari nol (*clean-slate rewrite*) menggunakan ekosistem Flutter & Dart dengan kriteria ketat:
+Membangun aplikasi secara mandiri menggunakan ekosistem Flutter & Dart dengan kriteria:
 1. Menjadikan aplikasi 100% offline-first dengan basis data lokal Drift SQLite v3 (pre-seeded 6.236 ayat + 25 Doa).
 2. Membangun mesin tokenizing Tajwid 60 FPS murni via `TextSpan` tanpa WebView.
 3. Mengintegrasikan sensor fusion kompas kiblat, kalkulasi sholat astronomis lokal, dan audio murottal caching.
 4. Menghadirkan Hisnul Muslim Dzikir Pagi-Petang terpandu dengan Tactile Haptic Tasbih dan Mode Zen Blind-Tap OLED (`#000000`).
 5. Menegakkan sertifikasi kontras WCAG 2.1 AA pada 3 tema adaptif (*Light*, *Warm Sepia*, *OLED Dark*).
-6. Menulis test suite komprehensif berkekuatan 320 automated tests berstatus hijau 100%.
+6. Menulis test suite komprehensif berkekuatan 414 automated tests berstatus hijau 100%.
 
 ### Action (Tindakan)
 1. **Clean Architecture Feature-First:** Mengisolasi `core/` dan `features/` dengan kontrak antarmuka fungsional `Either<Failure, T>` via `fpdart` dan dependency injection `get_it`.
