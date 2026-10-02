@@ -240,7 +240,18 @@ $ flutter test
 ## 📺 8. Live Demo & Repositori
 
 - **Public Architecture Showcase:** [`Michaelo7710/quranapp-showcase`](https://github.com/Michaelo7710/quranapp-showcase)
-- **Universal Release APK (v1.1.0):** [Unduh Versi Rilis Standar (v1.1.0)](https://github.com/Michaelo7710/quranapp-showcase/releases)
+- **Universal Release APK (v1.4.0 Production):** [Unduh Versi Rilis Produksi (v1.4.0)](https://github.com/Michaelo7710/quranapp-showcase/releases/download/v1.4.0/QuranApp-v1.4.0-release.apk)
+- **Halaman Rilis Publik:** [GitHub Showcase Releases](https://github.com/Michaelo7710/quranapp-showcase/releases)
+
+### 📥 Verifikasi Integritas Biner APK
+| Atribut | Nilai Verifikasi |
+| :--- | :--- |
+| **Versi Aplikasi** | `v1.4.0+3 (Production Hardened)` |
+| **Nama Berkas** | `QuranApp-v1.4.0-release.apk` |
+| **Ukuran Berkas** | `61.5 MB (64,504,906 bytes)` |
+| **SHA-256 Checksum** | `0CB93D933C6C7E0DECBFB15C141D2DBB072E5387B07EA80A224FFACBFD7DC272` |
+| **Target OS** | Android 7.0+ (API Level 24+) |
+
 - **Akses Peninjauan Kode Sumber:**  
   Bagi rekan-rekan atau tim rekayasa yang ingin meninjau implementasi kode sumber penuh di repositori privat [`Michaelo7710/quranapp-flutter`](https://github.com/Michaelo7710/quranapp-flutter), silakan hubungi saya untuk kolaborasi atau peninjauan kode.
 
