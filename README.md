@@ -248,8 +248,9 @@ $ flutter test
 | :--- | :--- |
 | **Versi Aplikasi** | `v1.4.0+3 (Production Hardened)` |
 | **Nama Berkas** | `QuranApp-v1.4.0-release.apk` |
-| **Ukuran Berkas** | `61.5 MB (64,504,906 bytes)` |
-| **SHA-256 Checksum** | `0CB93D933C6C7E0DECBFB15C141D2DBB072E5387B07EA80A224FFACBFD7DC272` |
+| **Ukuran Berkas** | `63.4 MB (66,489,642 bytes)` |
+| **SHA-256 Checksum** | `51A0ABF8C207D3619E95665065E16293D5C20853169952996AD7331C0815F895` |
+| **Stempel Waktu Build**| `02 Oktober 2026, 19:03 WIB (Memuat Penuh Batch 47 Tajwid & 414 Tests)` |
 | **Target OS** | Android 7.0+ (API Level 24+) |
 
 - **Akses Peninjauan Kode Sumber:**  
