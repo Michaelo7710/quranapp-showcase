@@ -20,7 +20,7 @@
 [Matriks Kontras WCAG 2.1 AA](#-3-standar-aksesibilitas-wcag-21-aa-matriks-kontras) •
 [Sensor Fusion & Hisnul Muslim](#-4-sensor-fusion-kompas-kiblat--haptic-dhikr-engine) •
 [Galeri Aset Vektor Fisik](#-5-galeri-aset-vektor-svg-fisik) •
-[Kedaulatan Offline-First (Schema v3)](#-6-kedaulatan-data-offline-first--sqlite-drift-v3) •
+[Persistensi Offline-First (Schema v3)](#-6-persistensi-data-offline-first--sqlite-drift-v3) •
 [Laporan Pengujian 414 Tests](#-7-laporan-verifikasi-kualitas--test-suite-100-green---414-tests) •
 [Live Demo & APK](#-8-live-demo--interactive-preview) •
 [STAR Case Study](#-9-star-case-study-untuk-rekruter--engineering-leads)
@@ -55,7 +55,7 @@ flowchart TD
     subgraph PresentationLayer["🎨 Lapisan Presentasi (UI & BLoC)"]
         UI["Flutter Widgets (Atomic UI / SDUI)"]
         Bloc["BLoC / Cubit (Deterministic State Machine)"]
-        RichTextEngine["Sacred RichText & TextSpan Tajweed Engine (60 FPS)"]
+        RichTextEngine["RichText & TextSpan Tajweed Engine (60 FPS)"]
         ThemeSystem["Adaptive Theme Tokens (Light, Warm Sepia, OLED Dark)"]
         DynamicBanner["Dynamic Contextual Home Banner (Prayer-Aware)"]
         UI --> Bloc
@@ -170,7 +170,7 @@ Aplikasi tidak menggunakan library paket ikon eksternal biner berukuran puluhan 
 
 ---
 
-## 💾 6. Kedaulatan Data Offline-First & SQLite Drift (v3)
+## 💾 6. Persistensi Data Offline-First & SQLite Drift (v3)
 
 ```mermaid
 erDiagram
@@ -281,16 +281,19 @@ Membangun aplikasi secara mandiri menggunakan ekosistem Flutter & Dart dengan kr
 6. **Otomasi Pengujian:** Menulis 320 unit/widget tests yang dijalankan secara headless di CI/CD.
 
 ### Result (Hasil)
-- 🚀 **100% Kedaulatan Data Lokal:** Seluruh konten ibadah dapat diakses tanpa koneksi internet dengan cold-start < 300ms dan latensi surah switch < 50ms.
+- 🚀 **100% Akses Data Lokal Offline:** Seluruh konten ibadah dapat diakses tanpa koneksi internet dengan cold-start < 300ms dan latensi surah switch < 50ms.
 - ⚡ **60 FPS Smooth Performance:** Rendering teks Utsmani dan dial indicator berjalan mulus tanpa frame drop.
-- 🟢 **Zero Linter Warnings:** `flutter analyze` 0 issues dan 320 automated tests berstatus hijau 100%.
-- 📱 **Universal Enterprise Boilerplate:** Struktur kode modular yang siap diadopsi untuk aplikasi perbankan syariah, utilitas ibadah, atau edutech skala besar.
+- 🟢 **Zero Linter Warnings:** `flutter analyze` 0 issues dan seluruh automated tests berstatus hijau 100%.
+- 📱 **Struktur Kode Modular Bersih:** Pola Clean Architecture yang rapi, mudah dirawat, dan siap dikembangkan lebih lanjut.
 
 ---
 
 <div align="center">
 
-**Disusun dengan Integritas Rekayasa oleh Tim AGY Ecosystem**  
-*Lead Systems Architect • Senior Mobile Engineer • Senior UI/UX Craftsman • Quality Gatekeeper*
+**Mikail Nurwahid — Junior Mobile Developer**  
+*Proyek mandiri untuk mengasah implementasi Clean Architecture, SQLite Offline-First, dan disiplin automated testing pada ekosistem Flutter & Dart.*
+
+[![GitHub](https://img.shields.io/badge/GitHub-Michaelo7710-181717?logo=github)](https://github.com/Michaelo7710)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat_Langsung-25D366?logo=whatsapp)](https://wa.me/6281234567890)
 
 </div>
